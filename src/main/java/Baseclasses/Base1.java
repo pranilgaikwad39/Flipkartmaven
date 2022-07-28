@@ -1,3 +1,4 @@
+
 package Baseclasses;
 
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class Base1 extends util1 {
  
 	 
 	 public static WebDriver getdriver(String browser) throws IOException {
-	 
+	 //tst1
 		 if(driver==null) {
 		 if(browser.equals("chrome")) {
 			 System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\browser\\chromedriver.exe");
@@ -40,11 +41,10 @@ public class Base1 extends util1 {
 			 }
 		 return driver ;
 		 }else {
-			 return driver ;
+			 return driver ;	 
 		 }
 	 }
-		 
-		 public static ExtentHtmlReporter getHtmlreporter() {
+		  public static ExtentHtmlReporter getHtmlreporter() {
 			 if(extentreporter == null) {
 				 extentreporter = new ExtentHtmlReporter("extentreport.html");
 				 return extentreporter ;
