@@ -51,11 +51,13 @@ public class util1 {
 		 js.executeScript("arguments[0].scrollIntoView(true);", element);
 		 
 	  }
-	 public static void screenshot(WebDriver driver ,String name) throws IOException {
+	 public static String screenshot(WebDriver driver ,String name) throws IOException {
 			TakesScreenshot ts = (TakesScreenshot)driver ;
 			File source = ts.getScreenshotAs(OutputType.FILE);
-			File destination = new File("D:\\Software Testing Class\\Automation\\Screenshot\\"+name+".jpg");
+			String ss = "D:\\Software Testing Class\\Automation\\Screenshot\\"+name+".jpg\"";
+			File destination = new File(ss);
 			FileHandler.copy(source, destination);
+			return ss ;
 		}
 	
 }

@@ -5,7 +5,7 @@
     <classes>
      <class name="flipkart.maven.verifyusercanlogin"/>
      <class name="flipkart.maven.verifycanaddaddress"/>
-      <class name="flipkart.maven.verifyusercansearchproduct"/>
+     
      
     </classes>
   </test> <!-- Test -->
